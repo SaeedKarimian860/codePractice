@@ -90,6 +90,11 @@ let quantity = 1;
 let userInput = "   hello there!! ";
 let msg = userInput.toUpperCase().trim();
 
+let movie = 'The Good, The Bad, and The Ugly';
+console.log(movie.indexOf('Bad'));
+console.log(movie.indexOf('Ugly'));
+
+
 
 
 
