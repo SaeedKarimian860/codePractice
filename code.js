@@ -94,7 +94,8 @@ let movie = 'The Good, The Bad, and The Ugly';
 console.log(movie.indexOf('Bad'));
 console.log(movie.indexOf('Ugly'));
 
-
+let word = "skateboard";
+let facialHair = word.slice(5).replace('o', 'e');
 
 
 
