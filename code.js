@@ -87,7 +87,8 @@ let quantity = 1;
 `${userName} bought ${quantity} ${item} for $${price}!!`;
 //Eddie Van Halen bought 1 Guitar for $1500!!
 
-
+let userInput = "   hello there!! ";
+let msg = userInput.toUpperCase().trim();
 
 
 
