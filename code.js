@@ -23,6 +23,8 @@ let random = Math.random();
 if (random < 0.5) {
   console.log("Your number is less than 0.5!!");
   console.log(random);
+} else {
+  console.log("Your number is greater (or equal) than 0.5!!!!");
 }
 
 //if, else if, else statements
@@ -103,8 +105,6 @@ const die2 = Math.floor(Math.random() * 6) + 1;
 
 let roll = `You rolled a ${die1} and a ${die2}. They sum to ${die1 + die2}`;
 
-
-
 // const dayOfWeek = "Monday";
 
 // if (dayOfWeek === "Monday") {
@@ -119,9 +119,9 @@ let roll = `You rolled a ${die1} and a ${die2}. They sum to ${die1 + die2}`;
 //   console.log("Meh");
 // } else if (dayOfWeek === "Thursday") {
 //   console.log("Meh");
-// } 
+// }
 
-const dayOfWeek = prompt('ENTER A DAY').toLowerCase();
+const dayOfWeek = prompt("ENTER A DAY").toLowerCase();
 
 if (dayOfWeek === "Monday") {
   console.log("Ugh, I hate Mondays!");
@@ -133,16 +133,28 @@ if (dayOfWeek === "Monday") {
   console.log("MEH");
 }
 
+const age = 8;
+
+if (age < 5) {
+  console.log("You are a baby, you get in for free!");
+} else if (age < 10) {
+  console.log("You are a child, you must pay $10");
+} else if (age < 65) {
+  console.log("You are an adult, you must pay $20");
+} else {
+  console.log("You are a senior, you pay $10");
+}
 
 
 
+const password = prompt("please enter a new password");
 
-// const age = 8;
-
-// if (age < 5) {
-//   console.log("You are a baby, you get in for free!")
-// } else if (age < 10) {
-//   console.log("You are a child, you must pay $10")
-// } else if (age < 65) {
-//   console.log("You are an adult, you must pay $20")
-// }
+if (password.length >= 6) {
+  if (password.indexOf(" ") === -1) {
+    console.log("Valid Password");
+  } else {
+    console.log("password cannot contain spaces!");
+  }
+} else {
+  console.log("Password too short! Must be 6+ characters");
+}
