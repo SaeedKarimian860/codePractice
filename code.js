@@ -103,6 +103,8 @@ const die2 = Math.floor(Math.random() * 6) + 1;
 
 let roll = `You rolled a ${die1} and a ${die2}. They sum to ${die1 + die2}`;
 
+
+
 // const dayOfWeek = "Monday";
 
 // if (dayOfWeek === "Monday") {
@@ -111,15 +113,36 @@ let roll = `You rolled a ${die1} and a ${die2}. They sum to ${die1 + die2}`;
 //   console.log("Hooray!! I love Saturdays!");
 // } else if (dayOfWeek === "Friday") {
 //   console.log("Friday is Here!! Lets start the weekend!");
-// }
+// } else if (dayOfWeek === "Tuesday") {
+//   console.log("Meh");
+// } else if (dayOfWeek === "Wednesday") {
+//   console.log("Meh");
+// } else if (dayOfWeek === "Thursday") {
+//   console.log("Meh");
+// } 
 
+const dayOfWeek = prompt('ENTER A DAY').toLowerCase();
 
-const age = 8;
-
-if (age < 5) {
-  console.log("You are a baby, you get in for free!")
-} else if (age < 10) {
-  console.log("You are a child, you must pay $10")
-} else if (age < 65) {
-  console.log("You are an adult, you must pay $20")
+if (dayOfWeek === "Monday") {
+  console.log("Ugh, I hate Mondays!");
+} else if (dayOfWeek === "Saturday") {
+  console.log("Hooray!! I love Saturdays!");
+} else if (dayOfWeek === "Friday") {
+  console.log("Friday is Here!! Lets start the weekend!");
+} else {
+  console.log("MEH");
 }
+
+
+
+
+
+// const age = 8;
+
+// if (age < 5) {
+//   console.log("You are a baby, you get in for free!")
+// } else if (age < 10) {
+//   console.log("You are a child, you must pay $10")
+// } else if (age < 65) {
+//   console.log("You are an adult, you must pay $20")
+// }
