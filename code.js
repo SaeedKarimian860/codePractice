@@ -102,3 +102,12 @@ const die1 = Math.floor(Math.random() * 6) + 1;
 const die2 = Math.floor(Math.random() * 6) + 1;
 
 let roll = `You rolled a ${die1} and a ${die2}. They sum to ${die1 + die2}`;
+
+
+const dayOfWeek = 'Monday';
+
+if (dayOfWeek === 'Monday') {
+  console.log("Ugh, I hate Mondays!")
+}else if (dayOfWeek === 'Saturday') {
+  console.log('Hooray!! I love Saturdays!')
+}
