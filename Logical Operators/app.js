@@ -51,3 +51,14 @@ switch (day) {
   default:
     console.log("I am not sure!");
 }
+
+
+const restaurant = {
+  name: 'Ivan Ramen',
+  address: `${Math.floor(Math.random() * 100) + 1}`,
+  city: 'Brooklyn',
+  state: 'NY',
+  zipcode: '11206'
+}
+
+const fullAddress = `${restaurant.address}, ${restaurant.city}, ${restaurant.state} ${restaurant.zipcode}`;
