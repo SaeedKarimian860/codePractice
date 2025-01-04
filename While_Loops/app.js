@@ -23,7 +23,7 @@ while (!maximum) {
 const targetNum = Math.floor(Math.random() * maximum) + 1;
 console.log(targetNum);
 
-let guess = parseInt(prompt("Enter you first guess!"));
+let guess = prompt("Enter you first guess! (Type 'q' to quit)");
 let attempts = 1;
 
 while (parseInt(guess) !== targetNum) {
