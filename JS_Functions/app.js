@@ -5,5 +5,28 @@ function singSong() {
     console.log('MI');
 }
 
-singSong();
-singSong();
+// singSong();
+// singSong();
+
+// function greet(person) {
+//     console.log(`Hi, ${person}`);
+// }
+
+// greet('Tim');
+// greet('Anya');
+// greet('Steve');
+
+function greet(firstName, lastName) {
+    console.log(`Hey there, ${firstName} ${lastName[0]}.`);
+}
+
+greet('Wayne', 'Rooney');
+
+
+function repeat(str, num) {
+    let result = '';
+    for (let i = 0; i < num; i++) {
+        result += str;
+    }
+    console.log(result);
+}
