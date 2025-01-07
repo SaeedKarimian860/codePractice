@@ -1,8 +1,8 @@
 function singSong() {
-    console.log('lalalala');
-    console.log('DO');
-    console.log('RE');
-    console.log('MI');
+  console.log("lalalala");
+  console.log("DO");
+  console.log("RE");
+  console.log("MI");
 }
 
 // singSong();
@@ -17,24 +17,22 @@ function singSong() {
 // greet('Steve');
 
 function greet(firstName, lastName) {
-    console.log(`Hey there, ${firstName} ${lastName[0]}.`);
+  console.log(`Hey there, ${firstName} ${lastName[0]}.`);
 }
 
-greet('Wayne', 'Rooney');
-
+greet("Wayne", "Rooney");
 
 function repeat(str, num) {
-    let result = '';
-    for (let i = 0; i < num; i++) {
-        result += str;
-    }
-    console.log(result);
+  let result = "";
+  for (let i = 0; i < num; i++) {
+    result += str;
+  }
+  console.log(result);
 }
 
-
 function add(x, y) {
-    if (typeof x !== 'number' || typeof y !== 'number') {
-        return false;
-    }
-    return x + y;
+  if (typeof x !== "number" || typeof y !== "number") {
+    return false;
+  }
+  return x + y;
 }
