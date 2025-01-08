@@ -19,3 +19,15 @@ const myMath = {
         return num ** 3;
     }
 }
+
+
+
+//'This' keyword in Methods
+const cat = {
+    name: 'Oscar',
+    color: 'Cookie Swirl',
+    breed: 'Wirehair',
+    meow() {
+        console.log(`${this.name} says Meeeoooowwww`);
+    }
+}
