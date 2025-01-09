@@ -6,21 +6,59 @@
 //     return x + y;
 // }
 
-const add = (x, y) => {
-    return x + y;
-}
+// const add = (x, y) => {
+//   return x + y;
+// };
 
 // const square = (num) => {
 //     return num * num;
 // }
 //another way to square a number
 const square = (x) => {
-    return x ** 2; // or x * x
-}
+  return x ** 2; // or x * x
+};
+
+// const rollDie = () => {
+//     return Math.floor(Math.random() * 6) + 1;
+//     //this goes from 1 - 5, the + 1 gets it to be 1 - 6.
+// }
+
+//implicit returns
+const rollDie = () =>(
+     Math.floor(Math.random() * 6) + 1
+)
+//uses parentheses instead of curly braces
 
 
-const rollDie = () => {
-    return Math.floor(Math.random() * 6) + 1;
-    //this goes from 1 - 5, the + 1 gets it to be 1 - 6.
-}
+const add = (a, b) => a + b; //one-liner implicit return
+//this only works if there is one and only one expression in the body of a function 
 
+
+const movies = [
+    {
+        title: '1917',
+        score: 100
+    },
+    {
+        title: 'All Quiet on the Western Front',
+        score: 95
+    },
+    {
+        title: 'The Magnificent Seven',
+        score: 80
+    },
+    {
+        title: 'The Hateful Eight',
+        score: 93 
+    }
+]
+
+// const newMovies = movies.map(function(movie) {
+//     return `${movie.title} - ${movie.score / 10} `
+// })
+
+
+//this could also be written on one line
+const newMovies = movies.map(movies => (
+    `${movie.title} - ${movie.score / 10}`
+))
