@@ -47,7 +47,9 @@ const goodTitles = goodMovies.map(m > m.title);
 movies.filter((m) => m.score > 80).map((m) => m.title);
 const badMovies = movies.filter((m) => m.score < 80);
 
+movies.some(movie => movies.year > 1972);
+
 //Every
 const exams = [80, 98, 92, 78, 77, 90, 89, 84, 81, 76];
 
-exams.every((score) => score >= 75);
+exams.every(score => score >= 75);
