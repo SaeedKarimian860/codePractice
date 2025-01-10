@@ -62,3 +62,20 @@ const movies = [
 const newMovies = movies.map(movies => (
     `${movie.title} - ${movie.score / 10}`
 ))
+
+
+
+//setTimeout & setInterval
+// console.log("HELLO!!....")
+// setTimeout(() => {
+//     console.log("...are you still there?")
+// }, 3000);
+//after 3000 ms (3 seconds) this will print out HELLO!
+
+
+const id = setInterval(() => {
+    console.log(Math.random())
+}, 2000);
+
+clearInterval(id);
+//use clearInterval calling id to stop this from continuously running!
