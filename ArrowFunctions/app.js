@@ -79,3 +79,25 @@ const id = setInterval(() => {
 
 clearInterval(id);
 //use clearInterval calling id to stop this from continuously running!
+
+
+
+
+//regular use of 'this'
+// const person = {
+//     firstName: 'Viggo',
+//     lastName: 'Mortensen',
+//     fullName: function () {
+//         return `${this.firstName} ${this.lastName}`
+//     }
+// }
+
+//Arrow Functions and 'this'
+const person = {
+    firstName: 'Viggo',
+    lastName: 'Mortensen',
+    fullName: () => {
+        return `${this.firstName} ${this.lastName}`
+    }
+}
+//in this scenario the keyword 'this' refers to the window object 
